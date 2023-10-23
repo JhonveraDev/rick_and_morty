@@ -1,4 +1,5 @@
-![](previews/testing-01.png)
+![](previews/testing-01.PNG)
+![](assets/preview.png)
 
 # RickMorty
 
