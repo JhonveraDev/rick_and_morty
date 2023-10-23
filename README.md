@@ -1,7 +1,7 @@
 ![](previews/testing-01.PNG)
-![](assets/preview.png)
 
-# RickMorty
+
+# Rick & Morty
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
