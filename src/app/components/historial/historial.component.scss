@@ -1,0 +1,23 @@
+.image__container {
+  align-items: end;
+  column-gap: 7px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: start;
+  width: 100%;
+
+  img {
+    border: 4px solid transparent;
+    border-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: auto;
+    transition: border 0.2s;
+    width: auto;
+  }
+
+  img:hover {
+    border-color: #1BD800;
+  }
+}

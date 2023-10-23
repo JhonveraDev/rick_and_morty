@@ -1,0 +1,40 @@
+.buttons {
+  column-gap: 15px;
+  display: flex;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 45px;
+  width: 115px;
+}
+
+.button__delete {
+  background-color: #DF0000;
+}
+
+.button__save {
+  background-color: #1BD800;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FFF;
+  color: #FFF;
+  font-size: 17px;
+  outline: none;
+  width: 240px;
+}
+
+label {
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+}
