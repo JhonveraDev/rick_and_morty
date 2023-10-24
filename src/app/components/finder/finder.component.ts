@@ -12,7 +12,7 @@ export class FinderComponent {
 
   getCharacter() {
     console.log(this.characterName);
-    this.characterSearch.emit(this.characterName)
-    // this.character = this.data.find(element => element.name === 'Rick Sanchez');
+    this.characterSearch.emit(this.characterName);
+    this.characterName = '';
   }
 }
