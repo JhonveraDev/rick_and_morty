@@ -3,33 +3,40 @@
     <div class="character-info__left">
       <div class="character">
         <label for="name">Nombre</label>
-        <span>Demo Span</span>
+        <span *ngIf="!character">{{data[randomCharacter].name}}</span>
+        <span *ngIf="character">{{character.name}}</span>
       </div>
       <div class="character">
         <label for="especies">Especie</label>
-        <span>Demo Span</span>
+        <span *ngIf="!character">{{data[randomCharacter].species}}</span>
+        <span *ngIf="character">{{character.species}}</span>
       </div>
       <div class="character">
         <label for="status">Estado</label>
         <div class="character-status">
           <span>Live</span>
           <div class="circle live"></div>
+          <span *ngIf="!character">{{data[randomCharacter].status}}</span>
+          <span *ngIf="character">{{character.status}}</span>
         </div>
       </div>
-      <app-finder class="data-finder"></app-finder>
+      <app-finder class="data-finder" (characterSearch)="searchCharacter($event)"></app-finder>
     </div>
     <div class="character-info__right">
       <div class="character">
         <label for="id">ID</label>
-        <span>Demo Span</span>
+        <span *ngIf="!character">{{data[randomCharacter].id}}</span>
+        <span *ngIf="character">{{character.id}}</span>
       </div>
       <div class="character">
         <label for="location">Locación</label>
-        <span>Demo Span</span>
+        <span *ngIf="!character">{{data[randomCharacter].location.name}}</span>
+        <span *ngIf="character">{{character.location.name}}</span>
       </div>
       <div class="character">
         <label for="gender">Genero</label>
-        <span>Demo Span</span>
+        <span *ngIf="!character">{{data[randomCharacter].gender}}</span>
+        <span *ngIf="character">{{character.gender}}</span>
       </div>
       <app-regex class="data-regex"></app-regex>
     </div>
@@ -37,5 +44,5 @@
   <app-historial class="data-historial"></app-historial>
 </div>
 <div class="right-section">
-  <app-image></app-image>
+  <app-image [image]="data[randomCharacter].image" [characterImage]="character.image"></app-image>
 </div>

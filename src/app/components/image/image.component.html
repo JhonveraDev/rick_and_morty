@@ -1,3 +1,4 @@
 <div class="image__container">
-  <img src="/assets/images/image/test-02.png" alt="">
+  <img *ngIf="!characterImage" [src]="image" alt="">
+  <img *ngIf="characterImage" [src]="characterImage" alt="">
 </div>
